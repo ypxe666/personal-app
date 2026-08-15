@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Pastikan root dan body memenuhi tinggi viewport */
+:root, html, body, #__next {
+  height: auto;
+}
+
+/* Full-page background (JPG dari public/images/bg.jpg) */
+body {
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #0b1220; /* fallback bila gambar tidak ada */
+}
+
+/* Optional: helper untuk konten agar terlihat di atas background */
+.bg-overlay-text {
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
